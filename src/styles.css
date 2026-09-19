@@ -1,0 +1,19 @@
+/* styles.css */
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header,
+.blurb,
+.hours-container {
+    border: 1px solid black;
+    margin: 2rem;
+    padding: 1rem;
+}
