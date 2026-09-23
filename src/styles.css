@@ -30,6 +30,11 @@ nav button {
     border: 1px solid black;
 }
 
+nav button:hover {
+    background-color: #EEEAD7;
+    color: #BC3908
+}
+
 .header,
 .blurb,
 .hours-container,
