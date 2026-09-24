@@ -1,4 +1,5 @@
 const homeTab = document.createElement('div');
+/*
 homeTab.innerHTML = `
         <div class="header">
             <h1>V's Pizzeria</h1>
@@ -26,19 +27,16 @@ homeTab.innerHTML = `
             </div>
         </div>
 `
-/*
+*/
+
 const homeHeader = document.createElement('div');
 homeHeader.classList.add('header');
-const homeBlurb = document.createElement('div');
-homeBlurb.classList.add('blurb');
-const homeHoursContainer = document.createElement('div');
-homeHoursContainer.classList.add('hour-container');
-const homeHours = document.createElement('div');
-homeHours.classList.add('hours');
-
 const headerText = document.createElement('h1');
 headerText.textContent = "V's Pizzeria"
+homeHeader.append(headerText);
 
+const homeBlurb = document.createElement('div');
+homeBlurb.classList.add('blurb');
 const blurbH2 = document.createElement('h2');
 blurbH2.textContent = 'No dashers, no drama, just dinner, delivered.';
 const blurbP = document.createElement('p');
@@ -48,12 +46,31 @@ blurbP.textContent = `We don't think a slice should cost an arm and a leg.
             medium or large?`;
 const blurbH3 = document.createElement('h3');
 blurbH3.textContent = '- V';
+homeBlurb.append(blurbH2, blurbP, blurbH3);
 
+const homeHoursContainer = document.createElement('div');
+homeHoursContainer.classList.add('hours-container');
 const hoursContainerH2 = document.createElement('h2');
 hoursContainerH2.textContent = 'Hours';
+const homeHours = document.createElement('div');
+homeHours.classList.add('hours');
+const sunDiv = document.createElement('div');
+const monDiv = document.createElement('div');
+const tueDiv = document.createElement('div');
+const wedDiv = document.createElement('div');
+const thuDiv = document.createElement('div');
+const friDiv = document.createElement('div');
+const satDiv = document.createElement('div');
+sunDiv.textContent = 'Sunday: 11am - 8pm';
+monDiv.textContent = 'Monday: 11am - 9pm';
+tueDiv.textContent = 'Tuesday: Closed';
+wedDiv.textContent = 'Wednesday: 11am - 9pm';
+thuDiv.textContent = 'Thursday: 11am - 9pm';
+friDiv.textContent = 'Friday: 11am - 11pm'
+satDiv.textContent = 'Saturday: 11am - 11pm';
+homeHours.append(sunDiv, monDiv, tueDiv, wedDiv, thuDiv, friDiv, satDiv);
+homeHoursContainer.append(hoursContainerH2, homeHours)
 
-homeHeader.append(headerText);
+homeTab.append(homeHeader, homeBlurb, homeHoursContainer);
 
-homeTab.append(homeHeader);
-*/
 export {homeTab};

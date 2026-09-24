@@ -47,6 +47,15 @@ nav button:hover {
     padding: 1rem;
 }
 
+.blurb h2,
+.hours-container h2 {
+    margin-top: 0;
+}
+
+.blurb h3 { 
+    margin-bottom: 0;
+}
+
 .menu-section {
     font-size: 2rem;
     padding: 1rem;
